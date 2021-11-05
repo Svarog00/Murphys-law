@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CitySpriteAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+    totalSpriteSurfaceArea: 5632
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -1233151927395729143, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: -5792510803933876580, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: 1985178123565804346, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: -5038074958315460984, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: -4596297335198760076, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: 6807247324530183186, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: -5495054001145619280, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: -3885477724941060927, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: 1090997340952338739, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: 7655375352596677600, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: 8472542188105609819, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: -4870211083798730947, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: -6237016837297963224, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: 6766554939691525832, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: -6837553463684696789, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: 6759658285089962681, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: 4713157288107227437, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: -2220625472498222394, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: 5501970510649503836, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: 7182904269749444269, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: -4099501080308224066, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  - {fileID: -1968815605043031161, guid: ded067078a91bcb46b7634845346c80c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - TilesFirstNotFull1_20
+  - TilesFirstNotFull1_21
+  - TilesFirstNotFull1_0
+  - TilesFirstNotFull1_1
+  - TilesFirstNotFull1_2
+  - TilesFirstNotFull1_3
+  - TilesFirstNotFull1_4
+  - TilesFirstNotFull1_5
+  - TilesFirstNotFull1_6
+  - TilesFirstNotFull1_7
+  - TilesFirstNotFull1_8
+  - TilesFirstNotFull1_9
+  - TilesFirstNotFull1_13
+  - TilesFirstNotFull1_12
+  - TilesFirstNotFull1_11
+  - TilesFirstNotFull1_10
+  - TilesFirstNotFull1_17
+  - TilesFirstNotFull1_16
+  - TilesFirstNotFull1_15
+  - TilesFirstNotFull1_14
+  - TilesFirstNotFull1_19
+  - TilesFirstNotFull1_18
+  m_RenderDataMap: {}
+  m_Tag: CitySpriteAtlas
+  m_IsVariant: 0

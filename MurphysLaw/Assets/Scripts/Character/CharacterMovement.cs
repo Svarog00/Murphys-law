@@ -23,7 +23,7 @@ public class CharacterMovement : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void Awake()
     {
         _rb2 = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
