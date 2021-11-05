@@ -2,17 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class CharacterMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private bool _canMove;
+    private Rigidbody2D _rb2;
+
+    [SerializeField] private float _movementSpeed;
+    private Vector2 _direction = Vector2.right;
+
+    public bool CanMove => _canMove;
+
+    private void Start()
     {
-        
+        _rb2 = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        
+        _rb2.MovePosition(_rb2.position + _direction * _movementSpeed * Time.deltaTime);
     }
 }
