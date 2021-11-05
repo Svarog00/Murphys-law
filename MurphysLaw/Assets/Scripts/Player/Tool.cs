@@ -5,7 +5,8 @@ public enum ToolTypes
 {
     Tape,
     Plank,
-    Food
+    Food,
+    Cutter,
 }
 
 [CreateAssetMenu(fileName = "Tool", menuName = "Tool", order = 0)]
