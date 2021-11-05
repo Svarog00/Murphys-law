@@ -11,7 +11,11 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float _movementSpeed;
     private Vector2 _direction = Vector2.right;
 
-    public bool CanMove => _canMove;
+    public bool CanMove
+    {
+        get => _canMove;
+        set => _canMove = value;
+    }
 
     private void Start()
     {
@@ -20,6 +24,9 @@ public class CharacterMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rb2.MovePosition(_rb2.position + _direction * _movementSpeed * Time.deltaTime);
+        if(_canMove)
+        {
+            _rb2.MovePosition(_rb2.position + _direction * _movementSpeed * Time.deltaTime);
+        }
     }
 }

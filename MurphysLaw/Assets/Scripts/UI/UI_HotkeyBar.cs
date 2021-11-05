@@ -7,23 +7,32 @@ namespace Assets.Scripts.Player
 {
     public class UI_HotkeyBar : MonoBehaviour
     {
-        private Transform _template;
+        [SerializeField] private Sprite _inactiveBack;
+        [SerializeField] private Sprite _activeBack;
+
         [SerializeField] private HotkeySystemPresenter _hotkeySystemPresenter;
+        [SerializeField] private List<Transform> _slots;
+        private Transform _template;
 
         // Use this for initialization
         void Start()
         {
             _template = transform.Find("toolSlotTemplate");
             _template.gameObject.SetActive(false);
-            UpdateVisual();
+            LoadVisual();
         }
 
-        private void SetHotkeySystem(HotkeySystemPresenter hotkeySystemPresenter)
+        private void OnEnable()
         {
-            _hotkeySystemPresenter = hotkeySystemPresenter;
+            _hotkeySystemPresenter.OnToolChangedPresent += OnToolChanged;
         }
 
-        private void UpdateVisual()
+        private void OnToolChanged(int index)
+        {
+            UpdateVisual(index);
+        }
+
+        private void LoadVisual()
         {
             List<Tool> toolList = _hotkeySystemPresenter.GetToolList();
             for (int i = 0; i < toolList.Count; i++)
@@ -37,6 +46,22 @@ namespace Assets.Scripts.Player
                 toolSlotTransform.Find("icon").GetComponent<Image>().sprite = tool.Icon;
                 toolSlotTransform.Find("numberText").GetComponent<TMPro.TextMeshProUGUI>().SetText((i + 1).ToString());
 
+                _slots.Add(toolSlotTransform);
+            }
+        }
+
+        private void UpdateVisual(int index)
+        {
+            for (int i = 0; i < _slots.Count; i++)
+            {
+                if(i == index)
+                {
+                    _slots[i].Find("background").GetComponent<Image>().sprite = _activeBack;
+                }
+                else
+                {
+                    _slots[i].Find("background").GetComponent<Image>().sprite = _inactiveBack;
+                }
             }
         }
     }

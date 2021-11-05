@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ObstacleModel
 {
     public event EventHandler OnDeactivateEventHandler;
@@ -10,10 +11,8 @@ public class ObstacleModel
     private ToolTypes _neededTool;
     private bool _active;
 
-    public ToolTypes NeededTool
-    {
-        get => _neededTool;
-    }
+    public ToolTypes NeededTool => _neededTool;
+    public bool Active => _active;
 
     public ObstacleModel(ToolTypes neededTool)
     {

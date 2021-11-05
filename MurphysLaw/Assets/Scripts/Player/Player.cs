@@ -6,11 +6,7 @@ public class Player : MonoBehaviour
 {
     private Tool _curTool;
 
-    public Tool CurTool
-    {
-        get => _curTool;
-        private set => _curTool = value;
-    }
+    public Tool CurTool => _curTool;
 
     public void SetTool(Tool tool)
     {

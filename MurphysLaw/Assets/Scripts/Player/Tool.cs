@@ -15,14 +15,7 @@ public class Tool : ScriptableObject
     [SerializeField] private Sprite _icon;
     [SerializeField] private ToolTypes _type;
 
-    public ToolTypes Type
-    {
-        get => _type;
-        set => _type = value;
-    }
+    public ToolTypes Type => _type;
 
-    public Sprite Icon
-    {
-        get => _icon;
-    }
+    public Sprite Icon => _icon;
 }
