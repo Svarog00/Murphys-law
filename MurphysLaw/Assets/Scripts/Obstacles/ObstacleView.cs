@@ -11,8 +11,8 @@ public class ObstacleView : MonoBehaviour
     void Start()
     {
         _obstacleModel = GetComponent<ObstacleController>();
-        _obstacleModel.Model.OnDeactivateEventHandler += OnDeactivate;
         _animator = GetComponent<Animator>();
+        _obstacleModel.Model.OnDeactivateEventHandler += OnDeactivate;
     }
 
     private void OnDeactivate(object sender, System.EventArgs e)

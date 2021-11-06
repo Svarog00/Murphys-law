@@ -11,7 +11,7 @@ public class ObstacleController : MonoBehaviour
     public ObstacleModel Model => _obstacleModel;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         _player = FindObjectOfType<Player>();
         _obstacleModel = new ObstacleModel(_neededTool);
