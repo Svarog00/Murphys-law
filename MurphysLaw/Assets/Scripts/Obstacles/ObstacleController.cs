@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class ObstacleController : MonoBehaviour
 {
     private ObstacleModel _obstacleModel;
     private Player _player;
+    private Animator _animator;
 
     [SerializeField] private ToolTypes _neededTool;
 
@@ -15,6 +17,7 @@ public class ObstacleController : MonoBehaviour
     {
         _player = FindObjectOfType<Player>();
         _obstacleModel = new ObstacleModel(_neededTool);
+        _animator = GetComponent<Animator>();
     }
 
     private void OnMouseUp()
@@ -31,6 +34,12 @@ public class ObstacleController : MonoBehaviour
         {
             Character character = collision.gameObject.GetComponent<Character>();
             character.Die();
+            _animator.SetTrigger("Death");
         }
+    }
+
+    private void ActivateDeathScreen()
+    {
+        Debug.Log("DEAHT");
     }
 }
