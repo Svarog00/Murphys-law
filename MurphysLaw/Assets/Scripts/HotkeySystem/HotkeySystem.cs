@@ -14,6 +14,8 @@ public class HotkeySystem
     {
         _player = player;
         _tools = toolSet;
+        _player.SetTool(_tools[0]);
+        OnToolChangedEventHandler?.Invoke(0);
     }
 
     // Update is called once per frame
