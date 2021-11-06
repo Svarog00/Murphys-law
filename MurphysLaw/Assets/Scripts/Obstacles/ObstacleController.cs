@@ -9,6 +9,7 @@ public class ObstacleController : MonoBehaviour
     private Animator _animator;
 
     [SerializeField] private ToolTypes _neededTool;
+    [SerializeField] private UI_DeathScreen _DeathScreen;
 
     public ObstacleModel Model => _obstacleModel;
 
@@ -40,6 +41,6 @@ public class ObstacleController : MonoBehaviour
 
     private void ActivateDeathScreen()
     {
-        Debug.Log("DEAHT");
+        _DeathScreen.Activate();
     }
 }

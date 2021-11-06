@@ -28,11 +28,5 @@ namespace Assets.Scripts.UI
 
             transform.localScale = scale;
         }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
     }
 }

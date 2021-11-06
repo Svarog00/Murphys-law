@@ -1,12 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    public event Action OnDeath;
+
     private CharacterMovement _charMovement;
 
-    // Start is called before the first frame update
     void Start()
     {
         _charMovement = GetComponent<CharacterMovement>();
@@ -16,6 +18,7 @@ public class Character : MonoBehaviour
     public void Die()
     {
         _charMovement.CanMove = false;
+        OnDeath?.Invoke();
         gameObject.SetActive(false);
     }
 }
