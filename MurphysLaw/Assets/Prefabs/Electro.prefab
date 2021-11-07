@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neededTool: 3
-  _DeathScreen: {fileID: 0}
+  _deathScreen: {fileID: 0}
   _deactivationSoundName: WireCut
 --- !u!114 &6324894738029665211
 MonoBehaviour:
@@ -128,7 +128,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00062918663, y: 0.024445951}
+  m_Offset: {x: 0.08308184, y: 0.104497015}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -139,7 +139,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.184134, y: 0.41866672}
+  m_Size: {x: 0.34903932, y: 0.57876885}
   m_EdgeRadius: 0
 --- !u!50 &6324894738029665213
 Rigidbody2D:

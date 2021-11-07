@@ -8,11 +8,13 @@ namespace Assets.Scripts.UI
     {
         private SpriteRenderer _sprite;
 
+        [SerializeField] private float _scaleCoeff;
+
         // Use this for initialization
         void Start()
         {
             _sprite = GetComponent<SpriteRenderer>();
-            float cameraHeight = Camera.main.orthographicSize * 2;
+            float cameraHeight = Camera.main.orthographicSize * _scaleCoeff;
             Vector2 cameraSize = new Vector2(Camera.main.aspect * cameraHeight, cameraHeight);
             Vector2 spriteSize = _sprite.sprite.bounds.size;
 

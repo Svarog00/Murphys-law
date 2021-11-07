@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+[RequireComponent(typeof(Animator))]
+public class EndScript : MonoBehaviour
+{
+    private Animator _animator;
+
+    private void Start()
+    {
+        _animator = GetComponent<Animator>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.GetComponent<Character>())
+        {
+            collision.gameObject.SetActive(false);
+            _animator.SetTrigger("Fall");
+        }
+    }
+
+    public void LoadFinalScene()
+    {
+        SceneManager.LoadScene(2);
+    }
+}

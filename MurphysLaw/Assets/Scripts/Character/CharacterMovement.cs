@@ -39,7 +39,8 @@ public class CharacterMovement : MonoBehaviour
     {
         if (_canMove)
         {
-            _rb2.MovePosition(_rb2.position + _direction * _movementSpeed * Time.deltaTime);
+            //_rb2.MovePosition(_rb2.position + _direction * _movementSpeed * Time.deltaTime);
+            transform.position += transform.right * (Time.deltaTime * _movementSpeed);
         }
     }
 }

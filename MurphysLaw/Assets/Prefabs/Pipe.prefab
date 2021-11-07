@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neededTool: 0
-  _DeathScreen: {fileID: 0}
+  _deathScreen: {fileID: 0}
   _deactivationSoundName: DuctTape
 --- !u!114 &6324894738029665211
 MonoBehaviour:
@@ -128,7 +128,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13324547, y: 0.088250816}
+  m_Offset: {x: -0.0766474, y: 0.088250816}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.7290316, y: 0.49332133}
@@ -139,7 +139,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.36711407, y: 0.513039}
+  m_Size: {x: 0.4803102, y: 0.513039}
   m_EdgeRadius: 0
 --- !u!50 &6324894738029665213
 Rigidbody2D:
